@@ -1,4 +1,4 @@
 import mongoose from "mongoose";
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/crms");
+mongoose.connect("mongodb+srv://sinister:BlackSinister@crms.bkhwv.mongodb.net/crms?retryWrites=true&w=majority&appName=crms");
