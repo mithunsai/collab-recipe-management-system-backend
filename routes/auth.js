@@ -8,7 +8,7 @@ router.post('/register', async (req, res, next) => {
         res.status(500).send({ message: 'User already registered' })
     }
     else {
-        await UserService.createUser(req.body.name, req.body.email, req.body.password)
+        await UserService.createUser(req.body)
         res.status(200).send({ message: 'Your account has been created' })
     }
 
